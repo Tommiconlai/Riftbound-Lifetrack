@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:rotation="180">
+
+        <ImageView
+            android:id="@+id/backgroundP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/layout_normal" />
+
+        <ImageView
+            android:id="@+id/imgBattlefield2P2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/bf1_active"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/battlefield2P2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/imgBattlefield1P2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/bf2_active"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/battlefield1P2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/P2Points"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:text="0"
+            android:fontFamily="@font/nasalization_rg"
+            android:textColor="@color/white"
+            android:textSize="180dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btnRestart"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/btn_restart" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/backgroundP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/layout_active" />
+
+        <ImageView
+            android:id="@+id/imgBattlefield2P1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/bf1_active" />
+
+        <Button
+            android:id="@+id/battlefield2P1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/imgBattlefield1P1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/bf2_active" />
+
+        <Button
+            android:id="@+id/battlefield1P1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/P1Points"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:text="0"
+            android:fontFamily="@font/nasalization_rg"
+            android:textColor="@color/white"
+            android:textSize="180dp" />
+
+    </FrameLayout>
+
+</LinearLayout>
